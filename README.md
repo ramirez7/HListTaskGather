@@ -51,7 +51,7 @@ tt3: scalaz.concurrent.Task[Boolean] = scalaz.concurrent.Task@2266c12
 scala> tt1 :: tt2 :: tt3 :: HNil
 res1: shapeless.::[scalaz.concurrent.Task[Int],shapeless.::[scalaz.concurrent.Task[String],shapeless.::[scalaz.concurrent.Task[Boolean],shapeless.HNil]]] = scalaz.concurrent.Task@4a6183e2 :: scalaz.concurrent.Task@56096a1 :: scalaz.concurrent.Task@2266c12 :: HNil
 
-scala> res7.gather
+scala> res1.gather
 res2: scalaz.concurrent.Task[shapeless.::[Int,shapeless.::[String,shapeless.::[Boolean,shapeless.HNil]]]] = scalaz.concurrent.Task@77b1b495
 // Note how we have a Task[HList] now
 
